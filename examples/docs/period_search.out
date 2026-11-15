@@ -1,0 +1,9 @@
+2817 trial periods, nu = 318
+  P [h]    chi2/nu
+   3.24741   1.012
+   1.62380   1.029
+   4.87081   1.513
+   8.11251   3.075
+   6.50127   3.086
+P = 3.24826 h  +- 0.00028 (Delta chi2 = 1)  threshold [3.24682, 3.24965]  red. chi2 0.985
+amplitude 0.402 +- 0.007 mag at mean phase angle 9.4 deg -> a/b >= 1.337

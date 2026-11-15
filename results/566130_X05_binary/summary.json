@@ -1,0 +1,215 @@
+{
+  "model": "contact binary",
+  "designation": "566130",
+  "horizons_target": "566130",
+  "n_points": 194,
+  "bands": [
+    "Lg",
+    "Li",
+    "Lr"
+  ],
+  "n_nights": 5,
+  "phase_angle_range": [
+    3.9340663201326525,
+    6.788284097771256
+  ],
+  "priors": {
+    "period": [
+      "gaussian",
+      0.17797798753618713,
+      5.339254198016841e-06,
+      5.0
+    ],
+    "pole": "uniform on sphere",
+    "phi0": "uniform [0, 360) deg",
+    "ln_jitter": "uniform in [-6.908, -2.303]",
+    "q": [
+      0.3,
+      1.0
+    ],
+    "b": [
+      0.5,
+      1.0
+    ],
+    "c_over_b": [
+      0.5,
+      1.0
+    ],
+    "s": [
+      0.7,
+      0.98
+    ],
+    "ln_c_L": [
+      -4.605170185988091,
+      4.605170185988092
+    ]
+  },
+  "sampler": {
+    "nlive": 400,
+    "sample": "rslice",
+    "niter": 9030,
+    "ncall": 599280,
+    "logZ": 310.42132654128864,
+    "logZ_err": 0.35606244086304717,
+    "finalised_from_checkpoint": false,
+    "seed": 42
+  },
+  "convergence": {
+    "lnZ": 310.42132654128864,
+    "lnZ_err": 0.35606244086304717,
+    "ess": 2619.5275752161024,
+    "evidence_fraction_in_live": 0.15032101322508304,
+    "dlogz_live": 0.1628966634480064,
+    "resumed": false,
+    "maxcall_hit": false,
+    "frac_prograde": 0.8783239242792307,
+    "frac_prograde_err": 0.006387316935968768,
+    "checks": {
+      "dlogz_live": "ok",
+      "ess": "ok",
+      "lnZ_err": "ok",
+      "frac_prograde_err": "ok"
+    },
+    "verdict": "CONVERGED",
+    "advice": [
+      "for publication: --dlogz 0.1 and one repeat with another --seed (compare with check_convergence.py)"
+    ]
+  },
+  "max_likelihood": {
+    "names": [
+      "lambda",
+      "beta",
+      "P",
+      "ln_jitter",
+      "phi0",
+      "q",
+      "b",
+      "c_over_b",
+      "s",
+      "ln_c_L"
+    ],
+    "theta": [
+      330.79067876083343,
+      73.26792088858811,
+      0.17797518268307602,
+      -3.1476283637006692,
+      348.5035170143875,
+      0.34700509509760685,
+      0.9854790828048987,
+      0.5912417857817793,
+      0.7914126061946927,
+      -4.455587890927474
+    ],
+    "logL": 332.37035038909545,
+    "chi2": 185.8187231653628,
+    "t_ref_jd": 2460795.5055736154
+  },
+  "posterior": {
+    "P_h": [
+      0.17797366915669396,
+      0.17797690375196634,
+      0.17798000186473734
+    ],
+    "jitter_mag": [
+      0.04111929615058307,
+      0.043241488290921996,
+      0.0456994541838772
+    ],
+    "beta_deg": [
+      54.085474242946525,
+      71.47361241685783,
+      80.0901029060014
+    ],
+    "frac_prograde": 0.8782608695652174,
+    "pole_hpd_sky_fraction": {
+      "68%": 0.005,
+      "95%": 0.024
+    },
+    "q": [
+      0.33176376219878156,
+      0.3427216573239205,
+      0.35279204049272384
+    ],
+    "b": [
+      0.9654332996328437,
+      0.977840374824482,
+      0.9897932941059193
+    ],
+    "c_over_b": [
+      0.5699565015070396,
+      0.7287446609545053,
+      0.9166552306931249
+    ],
+    "c": [
+      0.557123770452201,
+      0.7117301221566859,
+      0.8956490897687851
+    ],
+    "s": [
+      0.7434297665158464,
+      0.7684101977369936,
+      0.7907461469470877
+    ],
+    "volume_ratio": [
+      0.036516306345677,
+      0.04025544651911911,
+      0.043909282013661594
+    ],
+    "length_over_width": [
+      1.2011128845714676,
+      1.2118468476903883,
+      1.2255613909863705
+    ],
+    "width_over_height": [
+      1.07752469117574,
+      1.3842196090016075,
+      1.7173341081179818
+    ],
+    "c_lambert": [
+      0.01269397306092211,
+      0.021958664851850242,
+      0.05314217990054067
+    ]
+  },
+  "evidence_comparison": {
+    "lnZ_convex": 319.63033730006424,
+    "lnZ_binary": 310.42132654128864,
+    "delta_lnZ_binary_minus_convex": -9.209010758775605,
+    "bayes_factor_binary_over_convex": 0.00010013304975281035,
+    "reading": "convex strongly favoured",
+    "note": "same data, period prior, jitter prior and profiled band offsets; the shape priors differ (Laplace-marginalised harmonic coefficients vs uniform lobe parameters)"
+  },
+  "clipped_epochs": [
+    2460794.772706111
+  ],
+  "line_of_sight_lonlat": [
+    212.7774997770082,
+    7.022497038472848
+  ],
+  "settings": {
+    "nfacets": 800,
+    "soft": 0.02,
+    "c_lambert": 0.1,
+    "fit_cl": true,
+    "smear_nodes": 4,
+    "global_dir": "results/566130_X05_cl"
+  },
+  "runtime_s": 2013.302800655365,
+  "fit_quality": {
+    "n_points": 194,
+    "p_eff": 13.0,
+    "p_nominal": 13,
+    "n_spin": 5,
+    "n_linear": 4,
+    "dof": 181.0,
+    "chi2_nominal": 2684.9732425164625,
+    "chi2_red_nominal": 14.83410631224565,
+    "chi2_jitter": 185.81872316536277,
+    "chi2_red_jitter": 1.0266227799191314,
+    "rms_mag": 0.043584621470298,
+    "median_err_mag": 0.011803530545278955,
+    "jitter_mag": 0.042953877136244996,
+    "note": "parameter count: all lobe and spin parameters (no shrinkage prior)"
+  },
+  "data_fingerprint": "bc74198abb64"
+}

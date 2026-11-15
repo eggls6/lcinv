@@ -1,0 +1,6 @@
+ln L at (60, +70): 751.26  (first call compiles: 7 s)
+288 poles in 28 s
+best north pole: lambda  30.0  beta +82.5  ln L 751.49
+best south pole: lambda 255.0  beta -67.5  ln L 751.50
+shape: 796 vertices, extents a/b = 1.13, b/c = 1.02, area mismatch 0.000
+fit: chi2_red 3.35 (quoted errors) / 1.06 (with jitter), rms 21.5 mmag, p_eff 15.1

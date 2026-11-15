@@ -1,0 +1,14 @@
+numpy
+scipy
+pandas
+matplotlib
+jax
+optax
+dynesty
+numpyro
+arviz
+h5netcdf
+h5py
+astropy
+astroquery
+corner

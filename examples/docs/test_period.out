@@ -1,0 +1,5 @@
+right range: P = 0.500001 h (+-3.3e-06), chi2/nu 0.77, amplitude 0.334, no warning
+default range: P = 20.0190 h, chi2/nu 113.0; warnings:
+    the periodogram has a lower minimum at 1.0000 h (chi2/nu 3.15) below --pmin 2 h; the period may be shorter than the searched range (try a smaller --pmin)
+    the Fourier fit at the best period is poor (chi2/nu = 112.96); check the folded lightcurve, and widen --pmin/--pmax if it shows no clear lightcurve
+a/b bound: 1.4997 (expected 1.5)

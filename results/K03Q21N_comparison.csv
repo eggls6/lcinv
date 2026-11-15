@@ -1,0 +1,5 @@
+Model,ln Z method,N,p_eff,χ²_red (errors),χ²_red (jitter),rms [mmag],jitter [mmag],ln Z,Δ ln Z,reading,P(model),P(best),converged,folder
+"hybrid star-shaped, lmax 5 (2 spin state(s)) [K03Q21N_hybrid_quat]","Laplace (per spin state, summed)",334,36.7,2.25,1.14,17.2,12.2,795.30 ± 1.00,0.00,best,0.948,0.98,NOT CONVERGED,results/K03Q21N_hybrid_quat
+"hybrid star-shaped, lmax 5 (2 spin state(s)) [K03Q21N_hybrid]","Laplace (per spin state, summed)",334,36.8,2.21,1.14,17.1,12.2,792.40 ± 1.00,-2.90,moderate (worse),0.052,0.02,NOT CONVERGED,results/K03Q21N_hybrid
+"convex lmax 4, τ0 0.6, c_L 0.1 [K03Q21N_rslice]",nested sampling,334,15.1,3.37,1.09,21.6,17.3,732.52 ± 0.35,-62.78,strong (worse),0.000,0.00,CONVERGED,results/K03Q21N_rslice
+"convex lmax 4, τ0 0.6, c_L 0.1 [K03Q21N]",nested sampling,334,15.1,3.34,1.10,21.5,17.2,732.21 ± 0.25,-63.10,strong (worse),0.000,0.00,NOT CONVERGED,results/K03Q21N

@@ -1,0 +1,180 @@
+site_name: lcinv
+site_description: Bayesian convex and hybrid lightcurve inversion of asteroids from survey photometry
+site_author: Siegfried Eggl
+# Set these two to your repository before publishing:
+site_url: https://USER.github.io/lcinv/
+repo_url: https://github.com/USER/lcinv
+repo_name: lcinv
+edit_uri: edit/main/docs/
+exclude_docs: |
+  _snippets/
+
+copyright: lcinv 0.2.0 · documentation built with MkDocs Material
+
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  font:
+    text: Source Sans 3
+    code: Source Code Pro
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Dark theme
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Light theme
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - navigation.footer
+    - navigation.instant
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - content.tabs.link
+    - toc.follow
+
+extra_css:
+  - stylesheets/lcinv.css
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js
+
+plugins:
+  - search
+  - glightbox:
+      skip_classes: [no-lightbox]
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: [.]
+          options:
+            docstring_style: numpy
+            show_source: true
+            show_root_heading: true
+            show_root_full_path: false
+            show_signature_annotations: false
+            separate_signature: true
+            members_order: source
+            filters: ["!^_"]
+            show_if_no_docstring: true
+            heading_level: 2
+            merge_init_into_class: true
+
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+      toc_depth: 3
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets:
+      base_path: [docs, .]
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - Home: index.md
+  - Getting started:
+      - Installation: getting-started/installation.md
+      - Quickstart: getting-started/quickstart.md
+      - How lcinv works: getting-started/concepts.md
+  - User guide:
+      - guide/index.md
+      - Input data: guide/input-data.md
+      - Period search: guide/period-search.md
+      - Global convex inversion: guide/global-inversion.md
+      - Hybrid model: guide/hybrid.md
+      - Contact-binary model: guide/binary.md
+      - Exposure smearing: guide/smearing.md
+      - Scattering law: guide/scattering.md
+      - Shape complexity and model comparison: guide/model-comparison.md
+      - Cohesion and size: guide/physics.md
+      - Convergence: guide/convergence.md
+      - Outputs, viewers and OBJ export: guide/outputs.md
+      - Batch runs and MPC download: guide/batch.md
+      - GPU and performance: guide/performance.md
+  - Examples:
+      - examples/index.md
+      - ADES survey photometry: examples/ades-566130.md
+      - Period search from Python: examples/period-search-api.md
+      - Likelihood and shape from Python: examples/convex-api.md
+      - Hybrid model: examples/hybrid-k03q21n.md
+      - Working with finished runs: examples/post-processing.md
+      - Batch processing: examples/batch.md
+      - Contact binary versus ellipsoid: examples/synthetic-binary.md
+      - Reference results: examples/reference-results.md
+  - Reference:
+      - reference/index.md
+      - Command line:
+          - reference/cli/index.md
+          - run_inversion.py: reference/cli/run_inversion.md
+          - run_hybrid.py: reference/cli/run_hybrid.md
+          - run_binary.py: reference/cli/run_binary.md
+          - batch_shapes.py: reference/cli/batch_shapes.md
+          - check_convergence.py: reference/cli/check_convergence.md
+          - compare_models.py: reference/cli/compare_models.md
+          - complexity_scan.py: reference/cli/complexity_scan.md
+          - export_obj.py: reference/cli/export_obj.md
+          - make_folded_plots.py: reference/cli/make_folded_plots.md
+          - make_hybrid_report.py: reference/cli/make_hybrid_report.md
+          - make_viewer.py: reference/cli/make_viewer.md
+          - make_uncertainty_viewer.py: reference/cli/make_uncertainty_viewer.md
+          - reweight_resolution.py: reference/cli/reweight_resolution.md
+          - par_to_targets.py: reference/cli/par_to_targets.md
+          - python -m lcinv.mpc: reference/cli/lcinv_mpc.md
+          - python -m lcinv.size: reference/cli/lcinv_size.md
+          - python -m lcinv.hybrid.naming: reference/cli/lcinv_hybrid_naming.md
+      - Python API:
+          - reference/api/index.md
+          - lcinv.setup_data: reference/api/setup_data.md
+          - lcinv.data: reference/api/data.md
+          - lcinv.ades: reference/api/ades.md
+          - lcinv.ephem: reference/api/ephem.md
+          - lcinv.period: reference/api/period.md
+          - lcinv.convex: reference/api/convex.md
+          - lcinv.sampler: reference/api/sampler.md
+          - lcinv.minkowski: reference/api/minkowski.md
+          - lcinv.smear: reference/api/smear.md
+          - lcinv.binary: reference/api/binary.md
+          - lcinv.cohesion: reference/api/cohesion.md
+          - lcinv.size: reference/api/size.md
+          - lcinv.fitstats: reference/api/fitstats.md
+          - lcinv.diagnostics: reference/api/diagnostics.md
+          - lcinv.rebuild: reference/api/rebuild.md
+          - lcinv.plots and folding: reference/api/plots.md
+          - lcinv.mpc: reference/api/mpc.md
+          - lcinv.jaxenv: reference/api/jaxenv.md
+          - lcinv.hybrid: reference/api/hybrid.md
+      - Output files: reference/outputs.md
+  - Validation: validation.md
+  - Methods papers: papers.md

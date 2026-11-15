@@ -1,0 +1,231 @@
+{
+ "rows": [
+  {
+   "folder": "results/K03Q21N_hybrid_quat",
+   "model": "hybrid",
+   "label": "hybrid star-shaped, lmax 5 (2 spin state(s)) [K03Q21N_hybrid_quat]",
+   "method": "Laplace (per spin state, summed)",
+   "lnZ": 795.3034935489709,
+   "lnZ_err": 1.0,
+   "verdict": "NOT CONVERGED",
+   "fit_quality": {
+    "n_points": 334,
+    "p_eff": 36.66345621603652,
+    "p_nominal": 41,
+    "n_spin": 3,
+    "n_linear": 4,
+    "dof": 297.33654378396346,
+    "chi2_nominal": 669.1900514204506,
+    "chi2_red_nominal": 2.250614885423117,
+    "chi2_jitter": 339.8152276398373,
+    "chi2_red_jitter": 1.1428639860922634,
+    "rms_mag": 0.01720415977656239,
+    "median_err_mag": 0.0108815212324743,
+    "jitter_mag": 0.01110282416213697,
+    "k_shape": 32,
+    "lmax": 5,
+    "offset_marginalisation_term": -22.090571943045177
+   },
+   "data_fingerprint": "2b0a31a485aa",
+   "jitter_post": [
+    0.011232926162646043,
+    0.01218998507294082,
+    0.013169051885574363
+   ],
+   "cohesion": null,
+   "reliable": true,
+   "lower_bound": false,
+   "extra": {
+    "spin_states": [
+     {
+      "name": "spin state 1",
+      "weight": 0.013390489935338297,
+      "pole": [
+       241.3697291672965,
+       -66.21579793897982
+      ],
+      "verdict": "NOT CONVERGED"
+     },
+     {
+      "name": "spin state 2",
+      "weight": 0.9866095100646617,
+      "pole": [
+       68.60584079790236,
+       58.59591814079725
+      ],
+      "verdict": "NOT CONVERGED"
+     }
+    ]
+   },
+   "comparable": true,
+   "delta_lnZ": 0.0,
+   "probability": 0.9479682849819816,
+   "p_best": 0.98025,
+   "reading": "best"
+  },
+  {
+   "folder": "results/K03Q21N_hybrid",
+   "model": "hybrid",
+   "label": "hybrid star-shaped, lmax 5 (2 spin state(s)) [K03Q21N_hybrid]",
+   "method": "Laplace (per spin state, summed)",
+   "lnZ": 792.401025938794,
+   "lnZ_err": 1.0,
+   "verdict": "NOT CONVERGED",
+   "fit_quality": {
+    "n_points": 334,
+    "p_eff": 36.809996606136075,
+    "p_nominal": 41,
+    "n_spin": 3,
+    "n_linear": 4,
+    "dof": 297.19000339386395,
+    "chi2_nominal": 657.7011206307309,
+    "chi2_red_nominal": 2.2130660961670503,
+    "chi2_jitter": 339.81959093475695,
+    "chi2_red_jitter": 1.1434421987754289,
+    "rms_mag": 0.017069929750358512,
+    "median_err_mag": 0.0108815212324743,
+    "jitter_mag": 0.010907077938632218,
+    "k_shape": 32,
+    "lmax": 5,
+    "offset_marginalisation_term": -22.126415800243066
+   },
+   "data_fingerprint": "2b0a31a485aa",
+   "jitter_post": [
+    0.011213673874303288,
+    0.01215526204389103,
+    0.013138662985550784
+   ],
+   "cohesion": null,
+   "reliable": true,
+   "lower_bound": false,
+   "extra": {
+    "spin_states": [
+     {
+      "name": "spin state 1",
+      "weight": 0.17733353696099144,
+      "pole": [
+       247.34915086458946,
+       -80.26297232453071
+      ],
+      "verdict": "NOT CONVERGED"
+     },
+     {
+      "name": "spin state 2",
+      "weight": 0.8226664630390085,
+      "pole": [
+       68.85963076915996,
+       57.24974175644441
+      ],
+      "verdict": "NOT CONVERGED"
+     }
+    ]
+   },
+   "comparable": true,
+   "delta_lnZ": -2.9024676101769273,
+   "probability": 0.052031715018018454,
+   "p_best": 0.01975,
+   "reading": "moderate (worse)"
+  },
+  {
+   "folder": "results/K03Q21N_rslice",
+   "model": "convex",
+   "label": "convex lmax 4, \u03c40 0.6, c_L 0.1 [K03Q21N_rslice]",
+   "method": "nested sampling",
+   "lnZ": 732.519217939566,
+   "lnZ_err": 0.3549482139606428,
+   "verdict": "CONVERGED",
+   "fit_quality": {
+    "n_points": 334,
+    "p_eff": 15.090841632202038,
+    "p_nominal": 31,
+    "n_spin": 3,
+    "n_linear": 4,
+    "dof": 318.90915836779794,
+    "chi2_nominal": 1074.8064043514617,
+    "chi2_red_nominal": 3.370258821830032,
+    "chi2_jitter": 347.5478522039849,
+    "chi2_red_jitter": 1.089802042634216,
+    "rms_mag": 0.021567461737967353,
+    "median_err_mag": 0.0108815212324743,
+    "jitter_mag": 0.016720753604471717,
+    "p_eff_shape": 8.090841632202038,
+    "k_shape": 24,
+    "lmax": 4
+   },
+   "data_fingerprint": "2b0a31a485aa",
+   "jitter_post": [
+    0.01625712446357555,
+    0.017278366672283937,
+    0.01830691903707445
+   ],
+   "cohesion": null,
+   "reliable": true,
+   "lower_bound": false,
+   "extra": {
+    "tau0": null,
+    "c_lambert": null,
+    "pole_sky68": 0.01633333333333333
+   },
+   "comparable": true,
+   "delta_lnZ": -62.78427560940486,
+   "probability": 5.127779720532582e-28,
+   "p_best": 0.0,
+   "reading": "strong (worse)"
+  },
+  {
+   "folder": "results/K03Q21N",
+   "model": "convex",
+   "label": "convex lmax 4, \u03c40 0.6, c_L 0.1 [K03Q21N]",
+   "method": "nested sampling",
+   "lnZ": 732.2052987311484,
+   "lnZ_err": 0.24546851177375373,
+   "verdict": "NOT CONVERGED",
+   "fit_quality": {
+    "n_points": 334,
+    "p_eff": 15.092645352192191,
+    "p_nominal": 31,
+    "n_spin": 3,
+    "n_linear": 4,
+    "dof": 318.90735464780784,
+    "chi2_nominal": 1065.9528746032292,
+    "chi2_red_nominal": 3.3425158092714327,
+    "chi2_jitter": 352.17560124144273,
+    "chi2_red_jitter": 1.1043194711842736,
+    "rms_mag": 0.021495361232982443,
+    "median_err_mag": 0.0108815212324743,
+    "jitter_mag": 0.016456090466838925,
+    "p_eff_shape": 8.092645352192191,
+    "k_shape": 24,
+    "lmax": 4
+   },
+   "data_fingerprint": "2b0a31a485aa",
+   "jitter_post": [
+    0.016254158660117896,
+    0.017227513165043156,
+    0.018329262774435067
+   ],
+   "cohesion": null,
+   "reliable": true,
+   "lower_bound": false,
+   "extra": {
+    "tau0": null,
+    "c_lambert": null,
+    "pole_sky68": 0.01633333333333333
+   },
+   "comparable": true,
+   "delta_lnZ": -63.098194817822446,
+   "probability": 3.7462433107581873e-28,
+   "p_best": 0.0,
+   "reading": "strong (worse)"
+  }
+ ],
+ "best": "hybrid star-shaped, lmax 5 (2 spin state(s)) [K03Q21N_hybrid_quat]",
+ "recommendation": [
+  "*hybrid star-shaped, lmax 5 (2 spin state(s)) [K03Q21N_hybrid_quat]* is moderately favoured over *hybrid star-shaped, lmax 5 (2 spin state(s)) [K03Q21N_hybrid]* (\u0394 ln Z = 2.9 \u00b1 1.4, odds \u2248 18:1).",
+  "Caution: the best model's run is **NOT CONVERGED**; rerun it to convergence before trusting the comparison.",
+  "Caution: the best model's evidence is from Laplace (per spin state, summed); confirm it with a full nested run.",
+  "Fit adequacy: \u03c7\u00b2_red = 2.3 with the quoted errors (median 10.9 mmag); the model needs 11 mmag extra scatter. Either the errors are underestimated or there is signal no model here captures (shape detail, scattering, non-principal-axis rotation, calibration).",
+  "The data constrain p_eff \u2248 37 parameters of the best model (nominal 41)."
+ ],
+ "data_fingerprint": "2b0a31a485aa"
+}

@@ -1,0 +1,10 @@
+334 points; geometry vs file {'delta_au': 1.454731914929397e-07, 'r_au': 2.5232026690247267e-07, 'alpha_deg': 3.6327119943280195e-06}
+modes from global layer: [('mode 1', 244, -73, 0.5348943985307621), ('mode 2', 66, 71, 0.46510560146923785)]
+grid 16x32, k = 32, SH orthonormality error 3.8e-15
+mode 1: MAP logp 840.32 (starts [840.3 839.1 837.1 837.1]), |grad| 8.9e-11, ln Z_Laplace 768.90, non-positive curvatures 0  [278s]
+mode 1: NUTS 1905s (parallel), divergences 0, R-hat lam/bet/P 1.141/1.045/1.006, ESS 34/49/226
+mode 1: convexity 0.1651 R_eq (median max protrusion), shadowing error rms 5.15 mmag, max 17.45 mmag
+mode 2: MAP logp 839.84 (starts [839.8 839.8 839.5 839.7]), |grad| 8.2e-11, ln Z_Laplace 773.20, non-positive curvatures 0  [265s]
+mode 2: NUTS 1691s (parallel), divergences 0, R-hat lam/bet/P 1.039/1.085/1.002, ESS 207/69/800
+mode 2: convexity 0.1961 R_eq (median max protrusion), shadowing error rms 5.71 mmag, max 20.98 mmag
+done in 4299s -> results/K03Q21N_hybrid_quat

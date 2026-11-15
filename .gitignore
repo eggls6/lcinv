@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+.pytest_cache/
+
+# runs of your own (the shipped reference runs are in results/)
+runs/
+*.part
+dynesty.save.bak
+
+# documentation build
+site/
+
+# LaTeX by-products
+paper*/*.aux
+paper*/*.log
+paper*/*.out
+paper*/*.blg
+paper*/*.toc
+paper*/*.synctex.gz
+.ruff_cache/

@@ -1,0 +1,23 @@
+2 target(s) -> runs/batch (P_rot = 2 x period_h, window +-5%)
+
+# 566130  (P_rot = 2 x 0.0889888 h)
+python run_inversion.py data/566130_ades.csv --designation 566130 --outdir runs/batch/566130/global --pmin 0.16907872 --pmax 0.18687648 --npool 2 --device cpu --observer local --fit-cl --nlive 300
+python run_hybrid.py data/566130_ades.csv --designation 566130 --global-dir runs/batch/566130/global --outdir runs/batch/566130/hybrid --device cpu --observer local --fit-cl
+python check_convergence.py runs/batch/566130/global
+python export_obj.py runs/batch/566130/global
+python make_viewer.py runs/batch/566130/global
+python check_convergence.py runs/batch/566130/hybrid
+python export_obj.py runs/batch/566130/hybrid
+python make_viewer.py runs/batch/566130/hybrid
+python compare_models.py runs/batch/566130/global runs/batch/566130/hybrid --out runs/batch/566130/model_comparison
+
+# K03Q21N  (P_rot = 2 x 1.62413 h)
+python run_inversion.py data/K03Q21N.lc --designation K03Q21N --outdir runs/batch/K03Q21N/global --pmin 3.085847 --pmax 3.410673 --npool 2 --device cpu --observer local --fit-cl --diameter-km 2.16548 --density 1700 --nlive 300
+python run_hybrid.py data/K03Q21N.lc --designation K03Q21N --global-dir runs/batch/K03Q21N/global --outdir runs/batch/K03Q21N/hybrid --device cpu --observer local --fit-cl --diameter-km 2.16548 --density 1700
+python check_convergence.py runs/batch/K03Q21N/global
+python export_obj.py runs/batch/K03Q21N/global --diameter-km 2.16548
+python make_viewer.py runs/batch/K03Q21N/global
+python check_convergence.py runs/batch/K03Q21N/hybrid
+python export_obj.py runs/batch/K03Q21N/hybrid --diameter-km 2.16548
+python make_viewer.py runs/batch/K03Q21N/hybrid
+python compare_models.py runs/batch/K03Q21N/global runs/batch/K03Q21N/hybrid --out runs/batch/K03Q21N/model_comparison
